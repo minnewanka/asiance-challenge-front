@@ -1,8 +1,12 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   .container {
     max-width: 960px;
     margin: 0 auto;
     background: #f8f8f8;
+    flex: 1 0 auto;
   }
 }

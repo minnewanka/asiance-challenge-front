@@ -10,6 +10,7 @@ import Navbar from './components/navbar/Navbar';
 import { getAllPost } from '../src/services/postService';
 import Posts from './features/posts/PostList';
 import About from './features/about/About';
+import Footer from './components/footer/Footer';
 
 const App = () => {
   const [posts, setPosts] = useState([]);
@@ -36,6 +37,7 @@ const App = () => {
           <Route exact path="/about" component={About} />
           <Redirect to="posts" />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

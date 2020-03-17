@@ -8,7 +8,10 @@
   .post-first {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
+
+    @include responsive(tab-port) {
+      flex-wrap: wrap-reverse;
+    }
     .post-infos {
       display: flex;
 
@@ -25,6 +28,9 @@
         font-size: 0.8rem;
         margin: 1rem 0 1rem 0;
       }
+      .fa-tags {
+        margin-right: 1rem;
+      }
     }
     .post-container {
       align-items: flex-start;
@@ -39,6 +45,10 @@
 
     .post-body {
       margin: 1rem;
+      @include responsive(tab-port) {
+        margin: 0;
+        margin-top: 1rem;
+      }
     }
   }
 }

@@ -19,7 +19,7 @@ const Post = props => {
         <Author {...author} />
       </div>
       <div className="post-second">
-        <img src={imageUrl} alt="test" />
+        <img src={imageUrl} alt="" />
         <div>
           <p className="post-body">{body}</p>
         </div>
