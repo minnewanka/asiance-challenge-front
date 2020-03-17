@@ -5,8 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Parse from 'parse';
 
-Parse.initialize('ASIANCE-CC');
-Parse.serverURL = 'http://localhost:1337/parse';
+Parse.initialize(process.env.REACT_APP_APP_ID);
+Parse.serverURL = process.env.REACT_APP_PARSE_SERVER;
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
