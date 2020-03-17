@@ -1,0 +1,19 @@
+.author {
+  display: flex;
+  .author-avatar {
+    align-self: flex-start;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+  }
+  .author-infos {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    .author-infos--primary {
+      font-weight: bold;
+    }
+    .author-infos--secondary {
+      font-size: 0.8rem;
+    }
+  }
+}

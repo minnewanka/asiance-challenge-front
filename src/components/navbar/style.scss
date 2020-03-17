@@ -1,0 +1,27 @@
+.navbar {
+  background-color: white;
+  margin-bottom: 1rem;
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    .navbar-section {
+      margin: 1rem;
+    }
+  }
+  .active-route {
+    font-weight: bold;
+    text-decoration: underline;
+    &:visited {
+      text-decoration: inherit;
+      color: inherit;
+      cursor: auto;
+    }
+  }
+  .route {
+    text-decoration: none;
+    &:visited {
+      color: inherit;
+      cursor: auto;
+    }
+  }
+}
