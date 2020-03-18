@@ -15,13 +15,12 @@ const Navbar = props => {
         </div>
         <div className="navbar-menu">
           {MENU.map(item => (
-            <div className="navbar-section">
-              <Link
-                className={`${
-                  item === currentRoute ? 'active-route' : 'route'
-                }`}
-                to={item}
-              >
+            <div
+              className={`navbar-section ${
+                item === currentRoute ? 'active-section' : ''
+              }`}
+            >
+              <Link className="route" to={item}>
                 {item.toUpperCase()}
               </Link>
             </div>

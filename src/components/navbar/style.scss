@@ -5,23 +5,18 @@
     display: flex;
     justify-content: center;
     .navbar-section {
-      margin: 1rem;
+      margin-right: 1rem;
+      .route {
+        text-decoration: none;
+        &:visited {
+          text-decoration: inherit;
+          color: inherit;
+          cursor: auto;
+        }
+      }
     }
-  }
-  .active-route {
-    font-weight: bold;
-    text-decoration: underline;
-    &:visited {
-      text-decoration: inherit;
-      color: inherit;
-      cursor: auto;
-    }
-  }
-  .route {
-    text-decoration: none;
-    &:visited {
-      color: inherit;
-      cursor: auto;
+    .active-section {
+      border-bottom: 1px solid #000;
     }
   }
 }
