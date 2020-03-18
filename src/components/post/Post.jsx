@@ -1,6 +1,7 @@
 import React from 'react';
 import Author from '../author/Author';
 import './style.scss';
+import formatDateKR from '../../utils/utils';
 
 const Post = props => {
   const { title, body, updatedAt, createdAt, author, imageUrl, tags } = props;
@@ -9,8 +10,12 @@ const Post = props => {
       <div className="post-first">
         <div className="post-infos">
           <span className="post-title">{title}</span>
-          <span className="post-date">{`created ${createdAt.toUTCString()}`}</span>
-          <span className="post-date">{`updated ${updatedAt.toUTCString()}`}</span>
+          <span className="post-date">{`created ${formatDateKR(
+            createdAt,
+          )}`}</span>
+          <span className="post-date">{`updated ${formatDateKR(
+            updatedAt,
+          )}`}</span>
           <span className="post-tags">
             <i class="fa fa-tags"></i>
             {tags}
