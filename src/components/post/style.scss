@@ -2,10 +2,10 @@
 
 .post {
   background-color: white;
-  padding: 3rem 2rem 3rem 2rem;
+  padding: 2rem;
   text-align: left;
-  margin: 1rem 0 1rem 0;
-  .post-first {
+  margin: 1rem 0;
+  .post-top {
     display: flex;
     justify-content: space-between;
 
@@ -26,7 +26,7 @@
       }
       .post-tags {
         font-size: 0.8rem;
-        margin: 1rem 0 1rem 0;
+        margin: 1rem 0;
       }
       .fa-tags {
         margin-right: 1rem;
@@ -37,7 +37,7 @@
       text-align: left;
     }
   }
-  .post-second {
+  .post-bottom {
     display: flex;
     @include responsive(tab-port) {
       flex-wrap: wrap;

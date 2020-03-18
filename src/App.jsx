@@ -18,7 +18,6 @@ const App = () => {
   useEffect(() => {
     (async function loadData() {
       const results = await getAllPost();
-      console.log('result', results);
       setPosts(results);
     })();
   }, []);

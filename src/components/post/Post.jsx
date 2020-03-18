@@ -7,7 +7,7 @@ const Post = props => {
   const { title, body, updatedAt, createdAt, author, imageUrl, tags } = props;
   return (
     <div className="post">
-      <div className="post-first">
+      <div className="post-top">
         <div className="post-infos">
           <span className="post-title">{title}</span>
           <span className="post-date">{`created ${formatDateKR(
@@ -23,7 +23,7 @@ const Post = props => {
         </div>
         <Author {...author} />
       </div>
-      <div className="post-second">
+      <div className="post-bottom">
         <img src={imageUrl} alt="" />
         <div>
           <p className="post-body">{body}</p>
